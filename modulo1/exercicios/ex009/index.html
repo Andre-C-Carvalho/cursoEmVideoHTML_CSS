@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em HTML</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Nesse caso utliza-se a tag OL de "ordered list" e a tag LI de "list item". Nesse formato a ordem dos itens importa como por exemplo em uma lista de aprovados em um concurso, uma receita, ou uma rotina diária. Segue exemplo abaixo:</p>
+    <ol type="A">
+        <li>Acordar;</li>
+        <li>Tomar banho;</li>
+        <li>Acordar rafa;</li>
+        <li>Fazer café;</li>
+        <li>Acordar Eduardo;</li>
+        <li>Tomar café;</li>
+        <li>Deixar meninos na escola;</li>
+        <li>Ir trabalhar;</li>
+        <li>Pegar meninos na escolar;</li>
+        <li>Almoçar;</li>
+        <li>Banca de estudo;</li>
+        <li>Ir pra faculdade;</li>
+        <li>Voltar pra casa;</li>
+        <li>Dormmir.</li>
+    </ol>
+    <p>O parâmetro da tag ol TYPE permite a modificação do numeral que vem com cada item da lista as opções são: TYPE="1", "A", "a", "I", "i" ("1" é a configuração padrão). Outro parâmetro que pode ser modificado é o START que marca o início da lista, START="4" (só aceita números como argumento)iniciaria a lista em 4, D, d. IV ou iv por exemplo.</p>
+    <p>Obs: A partir do HTML5 a tag de fechamento &lt;/li&gt; não é mais obrigatória.</p>
+
+    <h2>Listas Não Ordenadas</h2>
+    <p>Nesse caso utliza-se a tag UL de "unordered list" e a tag LI de "list item" para os itens da lista. Nesse formato a ordem dos itens não importa, como em uma lista de compras, uma lista de assuntos a serem abordados ou uma lista de funcionalidades de uma linguagem qualquer. Segue exemplo abaixo:</p>
+    <ul type="square">
+        <li>Pão;</li>
+        <li>iogurte;</li>
+        <li>ovos;</li>
+        <li>biscoito;</li>
+        <li>óleo;</li>
+        <li>café;</li>
+        <li>arroz;</li>
+        <li>feijão;</li>
+        <li>suco de laranja;</li>
+        <li>cerveja;</li>
+        <li>salgadinho;</li>
+        <li>manteiga.</li>
+    </ul>
+    <p>O parâmetro da tag ol TYPE permite a modificação do símbolo que vem com cada item da lista. As opções são: TYPE="disc", "circle", "square" e "none" ("disc" é a configuração padrão).</p>
+    <p>Obs: A partir do HTML5 a tag de fechamento &lt;/li&gt; não é mais obrigatória.</p>
+
+    <h2>Listas Mistas</h2>
+    <p>Trata-se da junção de varias listas podendendo utilizar ambos os tipos anteriores. Cria-se uma lista com níveis hierarquicos. Veja o exemplo abaixo:</p> 
+    <p>Melhores jogos de video game:</p>
+    <ul>
+        <li>Atari:</li>
+            <ol type="a">
+                <li>River Raid</li>
+                <li>Megamania</li>
+                <li>Enduro</li>
+                <li>Pitfall</li>
+            </ol>
+        <li>Master System:</li>
+            <ol type="a">
+                <li>Phantasy Star</li>
+                <li>Alex kid in miracle world</li>
+                <li>E-swat</li>
+            </ol>
+        <li>Xbox360:</li>
+            <ol type="a">
+                <li>Dark Souls:</li>
+                    <ul type="circle">
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                <li>Batman Arkhan City</li>
+                <li>Ninja Gaiden 2</li>
+                <li>Lego Batman 2</li>
+            </ol>
+        <li>XboxOne:</li>
+            <ol type="a">
+                <li>Dark Souls 3</li>
+                <li>Sekiro</li>
+                <li>The Wtcher 3</li>
+            </ol>
+    </ul>
+
+    <h2>Listas de Definição</h2>
+    <p>Esse tipo de lista tem um formato parecido com um dicionário, ela é iniciada pela tag DL de "description list". Inicialmente há um termo que será definido, ele vem detro da tag DT "description therm". Após esse temo vem a descrição propriamente dita envelopada na tag DD. Veja o exemplo abaixo:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>- HYPERTEXT MARKUP LANGUAGE - largamente utilizada para organizar semanticamente o conteúdo de sites para internet.</dd>
+        <dt>CSS</dt>
+        <dd>- CASCADING STYLE SHEETS - largamente utilizada para a formatação do conteúdo de sites na internet.</dd>
+    </dl>
+
+</body>
+</html>

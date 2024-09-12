@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações e Códigos</title>
+</head>
+<body>
+    <h1>Formamtando Citações e Códigos</h1>
+    <h2>Código Fonte</h2>
+    <p>A tag CODE serve para que o HTML use uma fonte monoespaçada qur garante uma melhor leitura do código. <p>Exemplo1: window.document.getElementById('msg') formatação normal.</p> <p>Exemplo2: <code>window.document.getElementById('msg')</code> formatação para código fonte.</p> </p>
+
+    <h2>Pre-Formatação</h2>
+    <p>Outra possibilidade é o uso da tag PRE. Ela mantém a formatação utilizada no HTML inclusive espaços e indentação sendo útil quando queremos inseir trechos de código.</p>
+    <p>Exemplo:</p>
+    <pre>
+        <code>
+            int numero;
+            Scanner entrada = new Scanner(System.in);
+
+            numero = entrada.nextInt();
+            if (num % 2 == 0)
+                System.out.println("par");
+            else
+                System.out.println("ímpar");
+            System.out.println("Fim do programa")
+        </code>
+    </pre>
+
+    <h2>Citações Simples</h2>
+    <p>Utilizamos a tag Q como no exemplo abaixo:</p>
+    <p>Como dizia um antigo professor: <q>o computador é um burro muito rápido.</q></p>
+
+    <h2>Citações Completas</h2>
+    <p>Para citações longas usamos a tag BLOCKQUOTE como no exemplo abaixo:</p>
+    <p>Segundo Betsy Beyer em seu livro Engenharia de confiabilidade do google:<blockquote cite="https://www.google.com.br/books/edition/Engenharia_de_Confiabilidade_do_Google/p-aRDwAAQBAJ?hl=pt-BR&gbpv=1&dq=google+livros&printsec=frontcover">De modo diferente de praticamente tudo mais na vida, o "tédio" é, na verdade, um atributo positivo quando se trata de software! Não queremos que nossos programas sejam espontâneos e interessantes; queremos que eles sigam o roteiro e atinjam sua metas de negócio de forma previsível.</blockquote>
+    </p>
+
+    <h2>Abreviações</h2>
+    <p>Utilizamos a tag ABBR para indicar a abrviação. Dentro desta tag no atrito TITLE escrevemos o texto completo. Quando ocorre o movimento de hover do mouse, o texto completo é revelado. Abaixo é possível ver um exemplo:
+    </p>
+    <p>Este curso trata do aprendizado de <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+    <h2>Texto Invertido</h2>
+    <p>A tag BDO com o seu atributo DIR, permite a definição da direção do texto em RTL (right to left) ou LTR (left to right). A utilização de dir="rtl" faz o texto ficar invertido como no exemplo abaixo:</p>
+    <p><bdo dir="rtl">O curso em vídeo de HTML e CSS é muito bom.</bdo></p>
+    <p>texto normal: O curso em vídeo de HTML e CSS é muito bom.</p>
+</body>
+</html>

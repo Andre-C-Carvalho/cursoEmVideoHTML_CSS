@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Trabalando Com Links</h1>
+    <h2>Links Externos / Internos</h2>
+    <p>Para criar um hyperlink utilizamos a tag &lt;a&gt;&lt;/a&gt; que vem do inglês "anchor" (âncora). O principal parâmetro dessa tag é o href. Esse atributo é a URL completa do local para onde o usuário será direcionado caso interaja com o link externo. Segue um exemplo abaixo:</p>
+    <p>O site <a href="https://www.cursoemvideo.com/">curso em vídeo</a> é uma excelente ferramenta para o aprendizado de diversas competências importantes para o mercado de trabalho atual.</p>
+    <p>Otros dois parâmetrs importantes na tag A são o REL e o TARGET</p>
+    <ul>
+        <li>target - tem as seguintes opções:</li>
+            <ul>
+                <li>_blank - abre o link em uma nova aba do navegador, melhor opção para links externos;</li>
+                <li>_self - opcção padrão, abre o link na janela em que o usuário está. Não é interessante para links externos, retira o usuário do seu site. </li>
+            </ul>
+        <li>rel - faz referência a natureza do link:</li>
+            <ul>
+                <li>next - indica que o link é prara a próxima parte do documento atual;</li>
+                <li>prev - indica que o link é prara a parte anterior do documento atual;</li>
+                <li>author - indica que é um link para o site do autor do artigo atual;</li>
+                <li>external - indica que um link para outro site que não faz parte do site atual;</li>
+                <li>nofollow - indica que um link para um site não endossado, como por exemplo, um link pago.</li>
+            </ul>
+    </ul>
+    <p>O exemplo anterior utilizando a melhor configuração para um link externo, qual seja, target="_blank" e rel="external" fica da seguinte forma:</p>
+    <p>O site <a href="https://www.cursoemvideo.com/" rel="external" target="_blank">curso em vídeo</a> é uma excelente ferramenta para o aprendizado de diversas competências importantes para o mercado de trabalho atual.</p>
+
+    <h2>Links Internos</h2>
+    <p>Um link interno é criado com as mesmas tags &lt;a&gt;&lt;/a&gt; do anterior, mas nesse caso não há necessidade da URL completa, se ambos os arquivos estiverem na mesma pasta, basta o nome do arquivo, se estiverem em pastas diferentes o caminho será necessário. Segue abaixo o link para a segunda página deste site, ou seja, um link interno.</p>
+    <a href="p002.html" rel="next">Segunda página do site</a>
+    <p>Quando a página que se quer chegar não está na mesma pasta da página atual é necessário colocar em HREF o caminho completo, como no proximo link:</p>
+    <a href="noticias/p003.html">página de notícias</a>
+    <p>Como já foi dito anteriormente, em páginas internas, podemos / devemos utilizar o atributo TARGET="_SELF" para que os links sejam abertos na mesma página de navegação. Deve-se utilizar o atributo REL="" com o argumento correspondente ao conteúdo do link.</p>
+
+    <h2>Links para Download</h2>
+    <ul>
+        <li><a href="livro/lorem ipsun.pdf" download="lorem ipsun.pdf" type="application/pdf">arquivo .pdf</a></li>
+        <li><a href="livro/lorem ipsun.docx">arquivo .docx</a></li>
+        <li><a href="livro/lorem ipsun.zip">arquivo .zip</a></li>
+    </ul>
+</body>
+</html>

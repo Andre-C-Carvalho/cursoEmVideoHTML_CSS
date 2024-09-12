@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Utilização de Imagens Dinâmicas</h1>
+    <p>Nesse caso, será utilizada a tag PICTURE. Essa tag tem como filhas uma tag IMG e a quantidade necessária de tags SOURCE. A tag IMG será a utilizada quando senhuma das condições na tag SOURCE for cumprida.  Nas tags SOURCE são delimitadas condições (tipicamente tamanhos de tela) que permitem a escolha da melhor imagem para a situação. Dentro das tags SOURCE temos os atibutos:</p>
+    <ul>
+        <li>MEDIA: condição, como por exemplo: min-width: 450px</li>
+        <li>SRCSET: local onde a imagem está disponível</li>
+    </ul>
+    <p>No exemplo abaixo a imagem escolhida será a dentro de IMG sempre que a tela for maior que 1050px. Quando estiver entre 1050 e 750px outra imagem será escolhida e quando for menor que 750px uma terceira imagem será apresentada.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="/img/foto-p.png">
+        <source media="(max-width:1050px)" srcset="/img/foto-m.png">
+        <img src="img/foto-g.png" alt="imagem grande">
+    </picture>
+
+    <p>Neste outro exemplo faz-se o caminho contrário, a tag IMG contem a menor imagem que é a que será exibida quando nenhum condição contida nas tags SOURCE forem cumpridas. O resultado é semelhante ao anterior, mas atingido por um caminho diferente.</p>
+    <picture>
+        <source media="(min-width:1050px)" srcset="/img/foto-g.png">
+        <source media="(min-width:750px)" srcset="/img/foto-m.png">
+        <img src="img/foto-p.png" alt="imagem pequena">
+    </picture>
+
+    <h1>Utilização de Audio no Site</h1>
+    <p>Nesse primeiro exemplo utiliza-se apenas da tag AUDIO com os atributos SRC que indica o caminho do arquivo e o TYPE que indica o codec a ser utilizado para abrir o arquivo (opcional).</p>
+    <audio src="media/happy-mistake.mp3" type="audio/mpeg" controls></audio>
+    <p>Nesse próximo exmplo utiliza-se uma abordagem mais preocupada com a compatibilidade do navegadores. Nem todos eles reproduzem o formato .mp3 por exemplo. Para a compatibilidade total seria interessante utilizar a tag AUDIO de forma semelhante a tag PICTURE estabelecendo uma escala de formatos para a utilização pelos navegadores. Os principais formatos atuais são: .mp3, .ogg e .wav. No exemplo abaixo o navegador tentaria abrir em mp3, depois em ogg e por fim em wav, de a cordo com a ordem pre-estabelecida dentro da tag AUDIO.</p>
+    <audio controls loop preload="metadata">
+        <source src="media/happy-mistake.mp3" type="audio/mpeg">
+        <source src="media/happy-mistake.ogg" type="audio/ogg">
+        <source src="media/happy-mistake.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
