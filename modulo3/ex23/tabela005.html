@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso Colgroup</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin:  0 100px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .destaque{
+            background-color: aqua;
+        }
+
+        .destaque2{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupando Colunas com Colgroup</h1>
+    <table>
+        <colgroup>
+            <col class="destaque">
+            <col class="destaque2" span="2">
+            <col class="">
+            <col class="">
+        </colgroup>
+        <caption>Servidores UAOP</caption>
+        <tr>
+            <td>Servidor</td>
+            <td>Matrícula</td>
+            <td>Cargo</td>
+            <td>Sexo</td>
+        </tr>
+        <tr>
+            <td>Carvalho</td>
+            <td>15493</td>
+            <td>APF</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Garrido</td>
+            <td>16666</td>
+            <td>APF</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Silveira</td>
+            <td>9876</td>
+            <td>APF</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Leila</td>
+            <td>13256</td>
+            <td>APF</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>21098</td>
+            <td>EPF</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>André</td>
+            <td>23495</td>
+            <td>PPF</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Ricardo</td>
+            <td>17653</td>
+            <td>APF</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>23975</td>
+            <td>APF</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Marcela</td>
+            <td>18976</td>
+            <td>EPF</td>
+            <td>Feminino</td>
+        </tr>
+    </table>
+</body>
+</html>
