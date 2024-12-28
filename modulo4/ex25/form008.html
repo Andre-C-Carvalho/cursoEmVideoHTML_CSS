@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo 1: Tag output</h1>
+    <p>
+        <label for="ipar1">Pacela 1: </label>
+        <input type="number" name="par1" id="ipar1" required oninput="isoma.innerHTML = Number(ipar1.value) + Number(ipar2.value)">
+    </p>
+    <p>
+        <label for="ipar2">Parcela 2: </label>
+        <input type="number" name="par2" id="ipar2" required oninput="isoma.innerHTML = Number(ipar1.value) + Number(ipar2.value)">
+    </p>
+    <p>
+        <label for="isoma">Soma: </label>
+        <output id="isoma">0</output>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
