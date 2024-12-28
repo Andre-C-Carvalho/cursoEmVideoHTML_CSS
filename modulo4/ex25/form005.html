@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulários: Checkbox e Radio Button</h1>
+    <form action="cadastro.java" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexmasc" value="M" checked>
+            <label for="isexmasc">Masculino</label><br>
+            <input type="radio" name="sexo" id="isexfem" value="F">
+            <label for="isexfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" value="1" checked>
+            <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="volei" id="iesvolei" value="2">
+            <label for="iesvolei">Vôlei</label><br>
+            <input type="checkbox" name="esbasq" id="iesbasq" value="3">
+            <label for="iesbasq">Basquete</label><br>
+            <input type="checkbox" name="estenis" id="iestenis" value="4">
+            <label for="iestenis">Tênis</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
