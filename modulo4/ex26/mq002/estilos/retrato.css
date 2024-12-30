@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* Configuração Retrato - Só está ativo se altura > largura do dispositivo */
+
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}

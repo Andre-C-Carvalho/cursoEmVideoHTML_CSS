@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+article::after{
+    content: 'Esse artigo está hospedado em: www.github.com/andre-carvalho';
+}
