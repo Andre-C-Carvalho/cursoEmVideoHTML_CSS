@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/*
+Here are some common device breakpoints for 2024: 
+
+Extra small mobile: 320–480 pixels for the smallest smartphones
+
+Small mobile: 481–600 pixels for landscape mode on smartphones
+
+Small tablet: 601–768 pixels for portrait mode on tablets like the iPad Mini
+
+Large tablet: 769–1024 pixels for landscape mode on tablets like the iPad Pro
+
+Small desktop and laptop: 1025–1280 pixels for smaller laptops or desktops
+
+Large desktop: 1281–1440 pixels for large desktop monitors and high-resolution screens
+
+Extra-large screen: 1441 pixels and up for ultra-wide or high-definition monitors
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        color: black;
+        text-shadow: none;
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi diponibilizada por meio de um exercício do curso em vídeo!'
+    }
+
+    img#print{
+        margin: auto;
+    }
+
+    img#phone{display: none;}
+    img#pc{display: none;}
+    img#print{display: block;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 769px ) and (max-width: 1024px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#tablet{
+        margin: auto;
+    }
+
+    img#phone{display: none;}
+    img#pc{display: none;}
+    img#print{display: none;}
+    img#tablet{display: block;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#pc{
+        margin: auto;
+    }
+
+    img#phone{display: none;}
+    img#pc{display: block;}
+    img#print{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1281px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#tv{
+        margin: auto;
+    }
+
+    img#phone{display: none;}
+    img#pc{display: none;}
+    img#print{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: block;}
+}
